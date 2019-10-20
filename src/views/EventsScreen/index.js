@@ -3,7 +3,7 @@ import { connect } from 'react-redux'
 import PropTypes from 'prop-types'
 import ViewComponent from './ViewComponent'
 
-class HomeScreen extends Component {
+class EventsScreen extends Component {
 
   constructor(props){
     super(props)
@@ -14,16 +14,16 @@ class HomeScreen extends Component {
 
   render(){
     return(
-      <ViewComponent title={"Ed dos Prazeres <edimilsonpereira.pro@gmail.com>"} />
+      <ViewComponent  />
     )
   }
 }
 
-HomeScreen.defaultProps = {
+EventsScreen.defaultProps = {
 
 }
 
-HomeScreen.propTypes = {
+EventsScreen.propTypes = {
 
 }
 
@@ -33,4 +33,4 @@ const mapStateToProps = state => {
   }
 }
 
-export default connect(mapStateToProps)(HomeScreen)
+export default connect(mapStateToProps)(EventsScreen)
